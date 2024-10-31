@@ -35,6 +35,8 @@ function time() {
         song.src = "songs/afternoon.mp3";
         if(hours > 12) {
             var hrs = hours - 12;
+        } else {
+            var hrs = hours;
         }
         if(mins < 10) {
             document.getElementById("h2").textContent = `Good afternoon bruh. It's ` + hrs + ':0' + mins + 'pm';
@@ -53,7 +55,7 @@ function time() {
         song.src = "songs/evening.mp3";
         if(hours > 12) {
             var hrs = hours - 12;
-        }
+        } 
         if(mins < 10) {
             document.getElementById("h2").textContent = `Good evening bruh. It's ` + hrs + ':0' + mins + 'pm';
         } else {
